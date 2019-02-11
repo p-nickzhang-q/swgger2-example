@@ -5,7 +5,9 @@
     "description": "API for getting the current weather information.",
     "version": "1.0"
   },
-  "produces": ["application/json"],
+  "produces": [
+    "application/json"
+  ],
   "host": "localhost:3000",
   "basePath": "/api",
   "paths": {
@@ -13,7 +15,9 @@
       "get": {
         "x-swagger-router-controller": "Weather",
         "operationId": "getWeather",
-        "tags": ["/weather"],
+        "tags": [
+          "/weather"
+        ],
         "description": "Returns the current weather for the requested location using the requested unit.",
         "parameters": [
           {
@@ -29,7 +33,10 @@
             "description": "The unit, either 'C' or 'F'.",
             "required": true,
             "type": "string",
-            "enum": ["C", "F"],
+            "enum": [
+              "C",
+              "F"
+            ],
             "default": "F"
           }
         ],
@@ -92,9 +99,22 @@
         "imageUrl": {
           "type": "string"
         }
-
       },
-      "required": ["temperature", "skycode", "skytext", "date", "observationtime", "observationpoint", "feelslike", "humidity", "winddisplay", "day", "shortday", "windspeed", "imageUrl"]
+      "required": [
+        "temperature",
+        "skycode",
+        "skytext",
+        "date",
+        "observationtime",
+        "observationpoint",
+        "feelslike",
+        "humidity",
+        "winddisplay",
+        "day",
+        "shortday",
+        "windspeed",
+        "imageUrl"
+      ]
     },
     "Error": {
       "properties": {
@@ -102,7 +122,9 @@
           "type": "string"
         }
       },
-      "required": ["message"]
+      "required": [
+        "message"
+      ]
     },
     "Forecast": {
       "properties": {
@@ -131,7 +153,16 @@
           "type": "string"
         }
       },
-      "required": ["low", "high", "skycodeday", "skytextday", "date", "day", "shortday", "precip"]
+      "required": [
+        "low",
+        "high",
+        "skycodeday",
+        "skytextday",
+        "date",
+        "day",
+        "shortday",
+        "precip"
+      ]
     },
     "Location": {
       "type": "object",
@@ -156,13 +187,22 @@
         },
         "degreetype": {
           "type": "string",
-          "enum": ["C", "F"]
+          "enum": [
+            "C",
+            "F"
+          ]
         },
         "imagerelativeurl": {
           "type": "string"
         }
       },
-      "required": ["name", "lat", "long", "timezone", "degreetype"]
+      "required": [
+        "name",
+        "lat",
+        "long",
+        "timezone",
+        "degreetype"
+      ]
     },
     "Weather": {
       "properties": {
@@ -179,7 +219,11 @@
           }
         }
       },
-      "required": ["current", "location", "forecast"]
+      "required": [
+        "current",
+        "location",
+        "forecast"
+      ]
     }
   }
 }
