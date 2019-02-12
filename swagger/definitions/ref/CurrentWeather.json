@@ -1,0 +1,58 @@
+{
+    "properties": {
+        "temperature": {
+            "type": "string"
+        },
+        "skycode": {
+            "type": "string"
+        },
+        "skytext": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string"
+        },
+        "observationtime": {
+            "type": "string"
+        },
+        "observationpoint": {
+            "type": "string"
+        },
+        "feelslike": {
+            "type": "string"
+        },
+        "humidity": {
+            "type": "string"
+        },
+        "winddisplay": {
+            "type": "string"
+        },
+        "day": {
+            "type": "string"
+        },
+        "shortday": {
+            "type": "string"
+        },
+        "windspeed": {
+            "type": "string"
+        },
+        "imageUrl": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "temperature",
+        "skycode",
+        "skytext",
+        "date",
+        "observationtime",
+        "observationpoint",
+        "feelslike",
+        "humidity",
+        "winddisplay",
+        "day",
+        "shortday",
+        "windspeed",
+        "imageUrl"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "properties": {
+        "location": {
+            "$ref": "#/definitions/Location"
+        },
+        "current": {
+            "$ref": "#/definitions/CurrentWeather"
+        },
+        "forecast": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Forecast"
+            }
+        }
+    },
+    "required": [
+        "current",
+        "location",
+        "forecast"
+    ]
+}

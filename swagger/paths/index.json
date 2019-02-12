@@ -1,0 +1,5 @@
+{
+    "/weather": {
+        "$ref": "./ref/weather/index.json"
+    }
+}

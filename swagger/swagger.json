@@ -1,0 +1,19 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Simple Weather API",
+    "description": "API for getting the current weather information.",
+    "version": "1.0"
+  },
+  "produces": [
+    "application/json"
+  ],
+  "host": "localhost:3000",
+  "basePath": "/api",
+  "paths": {
+    "$ref": "./paths/index.json"
+  },
+  "definitions": {
+    "$ref": "./definitions/index.json"
+  }
+}

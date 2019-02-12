@@ -1,0 +1,17 @@
+{
+    "CurrentWeather": {
+        "$ref": "./ref/CurrentWeather.json"
+    },
+    "Error": {
+        "$ref": "./ref/Error.json"
+    },
+    "Forecast": {
+        "$ref": "./ref/Forecast.json"
+    },
+    "Location": {
+        "$ref": "./ref/Location.json"
+    },
+    "Weather": {
+        "$ref": "./ref/Weather.json"
+    }
+}

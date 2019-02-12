@@ -1,0 +1,38 @@
+{
+    "properties": {
+        "low": {
+            "type": "string"
+        },
+        "high": {
+            "type": "string"
+        },
+        "skycodeday": {
+            "type": "string"
+        },
+        "skytextday": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string"
+        },
+        "day": {
+            "type": "string"
+        },
+        "shortday": {
+            "type": "string"
+        },
+        "precip": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "low",
+        "high",
+        "skycodeday",
+        "skytextday",
+        "date",
+        "day",
+        "shortday",
+        "precip"
+    ]
+}

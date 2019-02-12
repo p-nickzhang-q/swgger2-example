@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "zipcode": {
+            "type": "string"
+        },
+        "lat": {
+            "type": "string"
+        },
+        "long": {
+            "type": "string"
+        },
+        "timezone": {
+            "type": "string"
+        },
+        "alert": {
+            "type": "string"
+        },
+        "degreetype": {
+            "type": "string",
+            "enum": [
+                "C",
+                "F"
+            ]
+        },
+        "imagerelativeurl": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "lat",
+        "long",
+        "timezone",
+        "degreetype"
+    ]
+}
