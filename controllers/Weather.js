@@ -1,19 +1,12 @@
 'use strict';
 
-var weather = require('weather-js');
+const Weather = require('../model/weather');
+const Responder = require('../middleware/responder');
 
-module.exports.getWeather = function getWeather (req, res, next) {
-  // Code necessary to consume the Weather API and respond
-  weather.find({
-    search: req.swagger.params.location.value,
-    degreeType: req.swagger.params.unit.value
-  }, function(err, result) {
-    if (err) {
-      console.log(err.stack);
-      return next(err.message);
-    }
-
-    res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify(result[0] || {}, null, 2));
-  });
+module.exports.getWeather = function getWeather(req, res, next) {
+  Responder.asHttpResponse(Weather.getWeather.bind(undefined,
+    req.swagger.params.location.value,
+    req.swagger.params.unit.value
+  ), req, res);
 };
+

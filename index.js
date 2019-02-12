@@ -1,10 +1,13 @@
 'use strict';
 
-var app = require('connect')();
-var http = require('http');
-var swaggerTools = require('swagger-tools');
+const app = require('express')();
+const http = require('http');
+const swaggerTools = require('swagger-tools');
 const JsonRefs = require('json-refs');
+const q = require('q');
+
 var serverPort = 8080;
+global.__initialized = q.defer();
 
 // swaggerRouter configuration
 var options = {
@@ -32,6 +35,7 @@ JsonRefs.resolveRefsAt('./swagger/swagger.json').then(swaggerConf => {
     // Start the server
     http.createServer(app).listen(serverPort, function () {
       console.log('Your server is listening on port %d (http://localhost:%d)', serverPort, serverPort);
+      global.__initialized.resolve(true);
     });
   });
 });

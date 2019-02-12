@@ -10,8 +10,9 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "connect": "^3.2.0",
+    "express": "^4.16.4",
     "json-refs": "^3.0.12",
+    "q": "^1.5.1",
     "swagger-tools": "^0.9.7",
     "weather-js": "^1.0.2"
   }
